@@ -1,0 +1,155 @@
+/* Footer Base */
+footer {
+  background: url('../assets/images/car_images/footerbackground.png') no-repeat center center / cover,
+              linear-gradient(to right, #292727, #4b4949); 
+  position: relative;
+  z-index: 1;
+  
+  margin-top: 40px;
+  color: #ccc;
+  padding: 50px 20px 20px;
+  font-family: 'Arial', sans-serif;
+  background-blend-mode: overlay; /* lets gradient darken image */
+}
+
+/* Dark overlay layer (optional for extra readability) */
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.footer-content, 
+.footer-bottom {
+  position: relative;
+  z-index: 2; /* text above overlay */
+}
+
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+/* Footer Section */
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 20px;
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-section h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #E50914;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* About Section */
+.footer-section.about .logo {
+  font-size: 32px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-section.about .logo span {
+  color: #E50914;
+}
+
+.footer-section.about p {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #bbb;
+  text-align: center;
+}
+
+/* Links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #E50914;
+  padding-left: 6px;
+  transition: 0.3s;
+  font-weight: bold;
+
+}
+
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
+}
+
+.social-icons img:hover {
+  filter: brightness(1) invert(0) sepia(1) hue-rotate(-20deg) saturate(5);
+  transform: scale(1.15);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 14px;
+  color: #777;
+  margin-top: 30px;
+}
+
+.footer-section.explore {
+  text-align: center; /
+}
+
+.footer-section.explore ul {
+  list-style: none;   
+  padding: 0;
+  margin: 0;
+  display: inline-block; 
+}
+
+.footer-section.explore ul li {
+  margin: 5px 0; 
+  display: inline;
+  margin: 0 10px;
+}
