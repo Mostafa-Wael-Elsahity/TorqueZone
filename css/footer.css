@@ -8,7 +8,6 @@ a {
 }
 
 img, picture, video, canvas, svg {
-  display: block;
   max-width: 100%;
 }
 
@@ -26,7 +25,7 @@ button {
 }
 
 button:hover {
-  background: darkred;
+  background: rgb(253, 0, 0);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -93,27 +92,27 @@ h1, h2, h3, h4, h5, h6 {
 .email-input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #444;
-    border-radius: 5px;
-    background-color: #ffc3c3;
-    color: #ff0000;
+    border: 2px solid #444;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
     margin-top: 10px;
 }
 
 .footer-btn {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     background-color: #ff0000;
     color: #fff;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    transition: background-color 0.03s ease;
 }
 
 .footer-btn:hover {
-    background-color: gold;
+    background-color: rgb(255, 0, 0);
 }
 
 .footer-social {
@@ -136,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-bottom {
-    border-top: 1px solid #fc0000;
+    border-top: 1px solid #ff0000;
     text-align: center;
     padding-top: 20px;
     margin-top: 40px;
@@ -152,4 +151,26 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     font-size: 0.8rem;
     color: #f70808;
+}
+
+.footer-btn{
+    width: 100%;
+    padding: 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.03s ease;
+}
+
+.footer-btn:hover {
+    background-color: rgb(143, 7, 7);
+}
+
+.footer-newsletter{
+    max-width: 300px;
+    margin: 0 auto;
+
 }
